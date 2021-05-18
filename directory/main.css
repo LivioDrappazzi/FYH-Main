@@ -1,0 +1,1634 @@
+/* CSS-reset от Эрика Мейера */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: auto;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+
+font-family: 'Montserrat';
+/*УКАЗАТЬ ПУТЬ ДО ШРИФТА Montserrat-Regular.ttf */
+src: url('../fonts/Montserrat-Regular.ttf');
+
+
+font-weight: normal;
+font-style: normal;
+
+}
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic');
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+
+ .body {
+ 	display: flex;
+ 	width: auto;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	align-items: center;
+	justify-content: center;
+ }
+
+ *, *:after, *:before {
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}
+
+ .header {
+	
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	line-height: 1;
+	background-color: #ffffff;
+	text-decoration: none;
+	z-index: 9999;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	z-index: 9999;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo__link {
+	z-index: 9999;
+}
+
+.logo__img {
+	height: 10vh;
+	width: 10vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9999;
+}
+
+.link__2, .link__3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.link__2 {
+	width: 33%;
+}
+
+.link__2 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__3 {
+	width: 33%;
+}
+
+.link__3 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__2 a:hover {
+	text-decoration: underline; 
+}
+
+.link__3 a:hover {
+	text-decoration: underline; 
+}
+
+.img {
+	width: 3vh;
+	height: 3vh;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.asas {
+	display: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3vh;
+}
+
+.main__container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.section__1 {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.smoke__1 {
+	position: absolute;
+	z-index: 9990;
+	width: 40%;
+	height: 90vh;
+	right: 60%;
+}
+
+.colored__background {
+	margin-top: 10vh;
+	position: absolute;
+	width: 80%;
+	height: 80vh;
+	background-color: #494646;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.colored__background::before {
+	content: 'FIND YOUR HOBBY'.
+}
+
+.mc__txt__1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	height: 40vh;
+	width: 90%;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 6vh;
+	display: flex;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.mc__txt__2, .mc__txt__3 {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: normal;
+	height: 20vh;
+	width: 90%;
+	text-align: left;
+	display: flex;
+	color: white;
+	font-size: 4vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.mc__txt__3 {
+
+}
+
+.mc__txt__1 h1 {
+	align-self: center;
+}
+
+.mc__txt__left {
+	font-size: 8vh;
+	color: #AE9174;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	transform: rotate(-90.2deg);
+	align-self: center;
+	margin-right: 60%;
+	margin-top: 10vh;
+	white-space: nowrap;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.photo {
+	position: absolute;
+	z-index: 9900;
+	width: 25%;
+	height: 80vh;
+	top: 20vh;
+	right: 10%;
+}
+
+.arrow {
+	position: absolute;
+	z-index: 9990;
+	top: 88vh;
+	right: 50%;
+	height: 10vh;
+	width: 10vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.section__2 {
+	margin-top: 20vh;
+	width: 100%;
+	height: 40vh;
+	background-color: #BF9E7E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.s2__txt {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.s2__txt__1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	font-size: 4.5vh;
+}
+
+.s2__txt__2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	font-size: 3vh;
+	margin-top: 5vh;
+	width: 60%;
+}
+
+.section__3__1 {
+	width: 100%;
+	height: 400vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.s31__left__txt__1 {
+	display: none;
+	font-size: 8vh;
+	color: #AE9174;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	white-space: nowrap;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9990;
+	text-decoration: underline;
+}
+
+.smoke__2 {
+	position: absolute;
+	height: 400vh;
+	width: 100%;
+	z-index: 9000;
+}
+
+.s3__colored__background {
+	position: absolute;
+	background-color: #494646;
+	width: 40%;
+	height: 390vh;
+}
+
+.s31__left__txt {
+	position: absolute;
+	align-self: flex-start;
+	font-size: 8vh;
+	color: #AE9174;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	transform: rotate(-90.2deg);
+	align-self: center;
+	margin-right: 87%;
+	margin-bottom: 350vh;
+	white-space: nowrap;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9990;
+	text-decoration: underline;
+
+}
+
+.s31__block__1 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 9990;
+}
+
+.poetry__2__foto {
+	width: 50vh;
+	height: 70vh;
+	filter: drop-shadow(20px -20px 0px transparent);
+   vertical-align: middle;
+}
+
+.poetry__2__foto img {
+	width: 50vh;
+	height: 70vh;
+	z-index: 9000;
+}
+
+.poetry__2__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+   border-radius: 10px;
+}
+
+.poetry__2__foto:before { 
+	content: 'Любите поэзию? Тогда вы по адресу! Читайте стихотворения известных и малоизвестных авторов на любой вкус, и главное – онлайн!'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 5vh;
+   text-align: center;
+  	color: black;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(255, 253, 252, 0.81);
+	opacity: 0;
+	display:flex; 
+	align-items: center;
+	border-radius: 18px;
+}
+
+.poetry__2__foto:hover:before,
+.poetry__2__foto:hover:after { opacity: 1; }
+
+.poetry__3__foto {
+	width: 50vh;
+	height: 70vh;
+	filter: drop-shadow(20px -20px 0px transparent);
+   vertical-align: middle;
+}
+
+.poetry__3__foto img {
+	width: 50vh;
+	height: 70vh;
+	z-index: 9000;
+}
+
+.poetry__3__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+   border-radius: 10px;
+}
+
+.poetry__3__foto:before { 
+	content: 'Все надоело? Не знаешь, чем заняться? Тогда переходи по ссылке. Лучшие игры, собранные специально для тебя, смогут занять твоё время.'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 5vh;
+   text-align: center;
+  	color: black;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(255, 253, 252, 0.81);
+	opacity: 0;
+	display:flex; 
+	align-items: center;
+	border-radius: 18px;
+}
+
+.poetry__3__foto:hover:before,
+.poetry__3__foto:hover:after { opacity: 1; }
+
+.poetry__4__foto {
+	width: 50vh;
+	height: 70vh;
+	filter: drop-shadow(20px -20px 0px transparent);
+   vertical-align: middle;
+}
+
+.poetry__4__foto img {
+	width: 50vh;
+	height: 70vh;
+	z-index: 9000;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__4__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+   border-radius: 10px;
+  	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__4__foto:before { 
+	content: 'Всегда мечтал питаться вкусной и здоровой едой, ни в чём себе не отказывая? Тогда этот блог для вас!'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 5vh;
+   text-align: center;
+  	color: black;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(255, 253, 252, 0.81);
+	opacity: 0;
+	display:flex; 
+	align-items: center;
+	border-radius: 18px;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__4__foto:hover:before,
+.poetry__4__foto:hover:after { opacity: 1; }
+
+.poetry__5__foto {
+	width: 50vh;
+	height: 70vh;
+	filter: drop-shadow(20px -20px 0px transparent);
+   vertical-align: middle;
+}
+
+.poetry__5__foto img {
+	width: 50vh;
+	height: 70vh;
+	z-index: 9000;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__5__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+   border-radius: 10px;
+  	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__5__foto:before { 
+	content: 'Интересуешься последними новостями в мире моды? Переходи по ссылке, и мы расскажем про тренды, коллекции и базовый гардероб — только для тебя!'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 5vh;
+   text-align: center;
+  	color: black;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(255, 253, 252, 0.81);
+	opacity: 0;
+	display:flex; 
+	align-items: center;
+	border-radius: 18px;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__5__foto:hover:before,
+.poetry__5__foto:hover:after { opacity: 1; }
+
+.poetry__6__foto {
+	width: 50vh;
+	height: 70vh;
+	filter: drop-shadow(20px -20px 0px transparent);
+   vertical-align: middle;
+}
+
+.poetry__6__foto img {
+	width: 50vh;
+	height: 70vh;
+	z-index: 9000;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__6__foto:after { 
+	content: ''; 
+	position: absolute; 
+	margin: auto;
+	background: none;
+	text-decoration: none;
+	opacity: 0; 
+	z-index: 9900;
+	display:flex; 
+	align-items: center;
+   border-radius: 10px;
+  	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__6__foto:before { 
+	content: 'Всегда восхищался искусством? Жми на кнопку, и отправляйся в путешествие по миру искусства различных эпох!'; 
+	position: absolute; 
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 5vh;
+   text-align: center;
+  	color: black;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(255, 253, 252, 0.81);
+	opacity: 0;
+	display:flex; 
+	align-items: center;
+	border-radius: 18px;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.poetry__6__foto:hover:before,
+.poetry__6__foto:hover:after { opacity: 1; }
+
+.rectangle__1 {
+	height: 20vh;
+	width: 20%;
+	display: flex;
+	background-color: white;
+	display: flex;
+	border: none;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	z-index: 9900;
+	padding: 10px 35px;  
+	overflow: hidden;
+	align-items: center;
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 5vh;
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	text-decoration: none;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.rectangle__1:hover {
+	font-size: 6vh;
+}
+
+.section__4 {
+	margin-top: 5vh;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	background-color: #494646;
+}
+
+.s4__left__txt {
+	position: absolute;
+	align-self: flex-start;
+	font-size: 8vh;
+	color: #AE9174;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	transform: rotate(-90.2deg);
+	align-self: center;
+	white-space: nowrap;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9990;
+	text-decoration: underline;
+	margin-bottom: 50vh;
+	margin-right: 90%;
+}
+
+.s4__left__txt__1 {
+	display: none;
+	font-size: 8vh;
+	color: #AE9174;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	white-space: nowrap;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	text-decoration: underline;
+	z-index: 9990;
+}
+/* стили основного контейнера слайдера */
+.slider {
+position: relative;
+overflow: hidden;
+height: 100vh;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+position: relative;
+overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+display: flex;
+transition: transform 0.6s ease;
+}
+/* стили для слайдов */
+.slider__item {
+flex: 0 0 100%;
+max-width: 100%;
+}
+/* стили для индикаторов */
+.slider__indicators {
+position: absolute;
+right: 0;
+bottom: 5vh;
+left: 0;
+z-index: 15;
+display: flex;
+justify-content: center;
+padding-left: 0;
+margin-right: 15%;
+margin-left: 15%;
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+}
+.slider__indicators li {
+box-sizing: content-box;
+flex: 0 1 auto;
+width: 10%;
+height: 1vh;
+margin-right: 3px;
+margin-left: 3px;
+text-indent: -999px;
+cursor: pointer;
+background: #494646;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+background-clip: padding-box;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+.slider__indicators li.active {
+background-color: #c4c4c4;
+}
+/* для стилизации текущего слайдера */
+.img-fluid {
+display: inline-block;
+height: auto;
+max-width: 100%;
+}
+.slide {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.slide__img {
+margin: 1%;
+width: 25%;
+height: 50vh;
+background-color: #D1BCAA;
+border-radius: 50px;
+-ms-user-select: none; 
+-moz-user-select: none; 
+-webkit-user-select: none; 
+user-select: none; 
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.slide__img__2 {
+margin: 1%;
+width: 25%;
+height: 50vh;
+background-color: #D1BCAA;
+border-radius: 50px;
+-ms-user-select: none; 
+-moz-user-select: none; 
+-webkit-user-select: none; 
+user-select: none; 
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.slide__block__1 {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.slide__block__2 {
+	width: 80%;
+}
+
+.slide__block__1 h1 {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4vh;
+}
+
+.slide__block__2 h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.5vh;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.slide__block__1 img {
+	height: 100px;
+}
+
+.container__4 {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(180deg, #494646 2.68%, rgba(73, 70, 70, 0.97) 16.01%, rgba(73, 70, 70, 0.9) 30.07%, rgba(73, 70, 70, 0.82) 46.74%, rgba(73, 70, 70, 0.76) 63.41%, rgba(73, 70, 70, 0.73) 75.91%, rgba(73, 70, 70, 0.68) 86.85%, rgba(73, 70, 70, 0.59) 102.68%);
+	border: none;
+}
+
+.f__block__1, .f__block__2 {
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	width: 33%;
+	display: flex;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #000000;
+}
+
+.f__block__1__1 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__2 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3__h1 {
+	font-family: Montserrat Alternates; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 3.5vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.f__block__1__3__h1:hover {
+	text-decoration: underline;
+}
+
+.f__block__2 {
+	font-family: Montserrat; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	color: white;
+}
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1vh;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 20px;
+  bottom: 2vh;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menubox{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+	font-family: Montserrat, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+  	transition-duration: .25s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+}
+.menu-item:hover {
+  background-color: #ECEFF1;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  right: 0;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.menu-item.category {
+	font-weight: bold;
+	font-style: italic;	
+}
+
+.menu-item.email img {
+	height: 5vh;
+}
+
+.menu-item.instagr img {
+	height: 5vh;
+}
+
+.menu-item.vkont img {
+	height: 5vh;
+}
+
+.menu-item__h1 {
+	font-size: 2vh;
+	margin-left: 5%;
+}
+
+.menubox li {
+	flex-direction: row;
+	width: 100%;
+}
+
+.mainmenubtn {
+   color: black;
+   border: none;
+   cursor: pointer;
+  	display: block;
+	font-family: Montserrat Alternates, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	font-style: normal;
+	text-decoration: none;
+  	transition: 3s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding: 12px 24px;
+	margin-top: 1vh;
+	background-color: transparent;
+	  transition-duration: .25s;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+      transition-duration: .25s;
+}
+.dropdown-child {
+    display: none;
+    background-color: #ECEFF1;
+    min-width: 200px;
+      transition-duration: .25s;
+}
+.dropdown-child__a {
+	color: black;
+	padding: 15px;
+	padding-left: 10%;
+	text-decoration: none;
+	display: block;
+	font-family: Montserrat Alternates, sans-serif;
+	font-size: 3.5vh;
+	font-style: italic;
+	 display: flex;
+    align-items: center;
+    justify-content: flex-start;
+      transition-duration: .25s;
+}
+
+.dropdown-child__a:hover {
+    font-size: 4vh;
+      transition-duration: .25s;
+}
+
+.dropdown:hover .dropdown-child {
+	display: block;
+	transition: 3s;
+	  transition-duration: .25s;
+}
+
+.ul__main {
+ list-style: none; /*убираем маркеры списка*/
+ margin: 0; /*убираем отступы*/
+ padding-left: 0; /*убираем отступы*/
+ background:#fff; /*добавляем фон всему меню*/
+ height: 10vh; /*задаем высоту*/
+ font-family: Montserrat Alternates, sans-serif;
+ font-size: 3.5vh;
+ padding: auto;
+ margin: auto;
+} 
+.maina {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#fff; /*добавляем фон к пункту меню*/
+  color:#000; /*меняем цвет ссылок*/
+  font-family: Montserrat Alternates, sans-serif; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+ border: none; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  	  /*padding:0px 15px; *//*добавляем отступ*/
+  	  padding-top: 2vh;
+  	  display: flex;
+  	  flex-direction: row;
+}
+.maina:hover {
+  background:#ECEFF1;/*добавляем эффект при наведении*/
+}
+
+.main__li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+   font-size: 3.5vh;
+   z-index: 9999;
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    .main__li > .ul__main {
+        position:relative;
+        display:none;   
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    .main__li:hover > .ul__main {
+        display:block; 
+        width:100%;  /*Задаем ширину выпадающего меню*/      
+    }
+   .main__li:hover > .ul__main > .main__li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+.img__cat {
+	height: 4vh;
+	padding-left: 0;
+}
+
+.butt {
+	border: none;
+	padding-left: 10px;
+	background-color: transparent;
+
+}
+
+.butt:hover {
+	height: .2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* АДАПТИВ */
+
+/* 1920 на 1080 */
+
+@media screen and (max-width: 1920px) {
+	.poetry__2__foto:before {
+		font-size: 4vh;
+	}
+	.poetry__3__foto:before {
+		font-size: 4vh;
+	}
+	.poetry__4__foto:before {
+		font-size: 4vh;
+	}
+	.poetry__5__foto:before {
+		font-size: 4vh;
+	}
+	.poetry__6__foto:before {
+		font-size: 4vh;
+	}
+	.slide__block__2 h1 {
+		font-size: 2.3vh;
+	}	
+	.mc__txt__left {
+		margin-right: 61%;
+	}
+}
+
+
+
+/* 1600 на 900 */
+
+@media screen and (max-width: 1600px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 3.2vh;
+	}
+	.mc__txt__left {
+		margin-right: 61%;
+	}
+}
+
+/* 1536 на 864 */
+
+/* 1440 на 900 */
+
+@media screen and (max-width: 1441px) {
+
+	.f__block__1 {
+		width: 90%;
+	}
+	.mc__txt__left {
+		margin-right: 56%;
+	}
+	.slide__block__2 h1 {
+		font-size: 2.5vh;
+	}	
+}
+
+@media screen and (max-width: 1367px) {
+
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		margin-left: 1%;
+	}
+	.mc__txt__left {
+		margin-right: 59%;
+	}
+}
+
+@media screen and (max-width: 1301px) {
+	.mc__txt__left {
+		margin-right: 63%;
+	}
+}
+
+@media screen and (max-width: 930px) {
+
+}
+
+@media screen and (max-width: 930px) {
+
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+}
+
+@media screen and (max-width: 886px) {
+
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 3.2vh;
+	}
+}
+
+@media screen and (max-width: 790px) {
+
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 3vh;
+	}
+	.f__block__2__h1 {
+		font-size: 3vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.rectangle__2 {
+		display: none;
+	}
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 2.5vh;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.f__block__1__3__h1 {
+		font-size: 2vh;
+	}	
+	.f__block__1__1 img {
+    width: 6vh;
+    height: 6vh;
+	}
+	.f__block__1__2 img {
+    width: 6vh;
+    height: 6vh;
+	}
+	.f__block__1__3 img {
+    width: 6vh;
+    height: 6vh;
+	}
+}
+
+@media screen and (max-width: 637px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+@media screen and (max-width: 532px) {
+	.main__li {
+		font-size: 2.8vh;
+	}
+	.container {
+		width: auto;
+	}
+	.ul__main {
+		display: none;
+	}
+	.link__2, .link__3 {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.logo {
+		justify-content: flex-start;
+	}
+	.burger-menu {
+		display: flex;
+	}
+	.menu-btn {
+		display: flex;
+		align-items: center;
+	}
+	.footer {
+		display: none;
+	}	
+	.container {
+		justify-content: flex-start;
+	}
+}
+
+
+@media screen and (max-width: 511px) {
+	.main__li {
+		font-size: 2.8vh;
+	}
+	.smoke__1 {
+		width: 90%;
+		right: 0;
+	}
+	.photo {
+	width: 58%;
+	height: 60vh;
+	right: 40%;
+	z-index: -1;
+	}
+	.mc__txt__1 {
+		z-index: 9990;
+	}
+	.mc__txt__2 {
+		z-index: 9990;
+	}
+	.arrow {
+		right: 45%;
+	}
+	.s2__txt__1 {
+		font-size: 3.5vh;
+	}
+	.poetry__2__foto, .poetry__3__foto, .poetry__4__foto, .poetry__5__foto, .poetry__6__foto {
+		width: 30vh;
+		height: 50vh;
+	}
+
+	.poetry__2__foto img {
+		width: 30vh;
+		height: 50vh;
+	}
+	.poetry__3__foto img {
+		width: 30vh;
+		height: 50vh;
+	}
+	.poetry__4__foto img {
+		width: 30vh;
+		height: 50vh;
+	}
+	.poetry__5__foto img {
+		width: 30vh;
+		height: 50vh;
+	}
+	.poetry__6__foto img {
+		width: 30vh;
+		height: 50vh;
+	}
+	.rectangle__1 {
+		height: 20vh;
+		width: 30%;
+		z-index: 9990;
+		font-size: 4vh;
+	}
+	.s31__left__txt {
+		font-size: 6vh;
+		transform: none;
+		margin-right: 40%;
+		margin-bottom: 483vh;
+		white-space: nowrap;
+		z-index: 9990;
+	}
+	.rectangle__1:hover {
+		font-size: 5vh;
+	}
+	.poetry__2__foto:before {
+		font-size: 3vh;
+	}
+	.poetry__3__foto:before {
+		font-size: 3vh;
+	}
+	.poetry__4__foto:before {
+		font-size: 3vh;
+	}
+	.poetry__5__foto:before {
+		font-size: 3vh;
+	}
+	.poetry__6__foto:before {
+		font-size: 3vh;
+	}
+	.section__3__1 {
+		justify-content: flex-start;
+		margin-top: 5vh;
+		height: 360vh;
+	}
+	.s31__block__1 {
+		height: 75vh;
+	}
+	.s3__colored__background {
+		height: 350vh;
+	}
+	.smoke__2 {
+		height: 360vh;
+	}
+	.slide__img__2 {
+		display: none;
+	}
+	.slide__img {
+		width: 80%;
+	}
+	.s4__left__txt {
+		font-size: 6vh;
+		transform: none;
+		margin-bottom: 90vh;
+		margin-right: 0;
+	}
+	.s31__left__txt__1 {
+		margin-top: 5vh;
+		display: block;
+		font-size: 5vh;
+	}
+	.s31__left__txt {
+		display: none;
+	}
+	.s4__left__txt__1 {
+		font-size: 5vh;
+	}
+	.s4__left__txt {
+		display: none;
+	}
+	.slide__block__2 {
+		margin-top: 5vh;
+	}
+	.asas {
+		display: block;
+		font-style: italic;
+		margin-left: 17%;
+		z-index: 9999;
+	}
+}
+
+@media screen and (max-width: 461px) {
+	.s2__txt__1 {
+		font-size: 3vh;
+	}	
+	.asas {
+		margin-left: 14%;
+	}
+}
+
+@media screen and (max-width: 451px) {
+	.mc__txt__1 {
+		font-size: 5.5vh;
+	}
+	.mc__txt__2 {
+		font-size: 3.5vh;
+	}
+	.mc__txt__3 {
+		font-size: 3.5vh;
+	}
+	.fas.fa-arrow-right {
+		display: none;
+	}
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 426px) {
+	.s31__left__txt {
+		font-size: 5vh;
+	}
+	.rectangle__1 {
+		font-size: 3vh;
+		height: 10vh;
+	}
+	.rectangle__1:hover {
+		font-size: 3.5vh;
+	}
+	.slide__block__1 h1 {
+		font-size: 3vh;
+	}
+	.slide__block__2 h1 {
+		font-size: 2.2vh;
+	}
+	.asas {
+		margin-left: 12%;
+	}	
+}
+
+@media screen and (max-width: 416px) {
+	.mc__txt__1 {
+		font-size: 5vh;
+	}
+	.mc__txt__2 {
+		font-size: 3vh;
+	}
+	.mc__txt__3 {
+		font-size: 3vh;
+	}
+	.s2__txt__1 {
+		font-size: 2.5vh;
+	}
+	.asas {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.slide__block__2 h1 {
+		font-size: 1.9vh;
+	}	
+	.s31__left__txt {
+		font-size: 4.5vh;	
+	}
+	.asas {
+		margin-left: 8%;
+	}
+}
